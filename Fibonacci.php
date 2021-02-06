@@ -1,11 +1,11 @@
 <?php 
 	class finb{
-		public function suingRecursion($number){
+		public function usingRecursion($number){
 			if($number <= 1) return $number;
 			return  ($this->suingRecursion($number-1) + $this->suingRecursion($number-2));
 
 		}
-		public function suingDynamicProgrammin($number){
+		public function usingDynamicProgrammin($number){
 			$fib = array();
 			$fib[0] = 0;
 			$fib[1] = 1;
